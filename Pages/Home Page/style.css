@@ -1,0 +1,29 @@
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 280px;
+    background-color: #f8f9fa;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-center {
+    text-align: center;
+    flex-grow: 1;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-center img {
+    margin-right: 10px;
+}
