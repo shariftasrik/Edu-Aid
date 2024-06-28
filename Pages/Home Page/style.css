@@ -1,4 +1,7 @@
-
+.logo{
+    height: 70px;
+    border-radius: 50%;
+}
 
 .sidebar {
     height: 100vh;
@@ -41,9 +44,7 @@
 
 
 
-.header-center .logo{
-    margin-left: 20px;
-}
+
 
 .button-toggle-menu {
     border: none;
@@ -56,21 +57,47 @@
     position: relative;
 }
 
+
 a, button {
     outline: 0 !important;
 }
 
 .carousel{
-    margin: 50px;
-    border: 15px solid rgb(238, 236, 236);
+    margin: 80px;
     border-radius: 10px;
 }
 
 .teacher{
-    margin: 50px;
+    margin: 70px;
 }
 
 .avatar{
     height: 100px;
     border-radius: 50%;
+}
+
+.program-icon{
+    height: 35px;
+}
+
+.ms-3{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result{
+    display: flex;
+    justify-content: space-around;
+}
+
+.result-img{
+    margin: 80px;
+    height: 450px;
+    width: 1600px;
+}
+
+.custom{
+    display: flex;
+    justify-content: space-around;
 }
