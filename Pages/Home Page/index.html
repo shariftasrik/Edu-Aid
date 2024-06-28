@@ -10,16 +10,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">
     <link rel="icon" href="../Assets/Images/Logos/Logo-1.png" type="X/gif/png" width="35px" class="browser-icon">
-    <style>
-        
-    </style>
+
 </head>
 <body>
     <section id="header">
         <header class="p-3 mb-3 border-bottom">
             <div class="container header-container">
                 <div class="header-left">
-                    
+                    <img src="../Assets/svg/list.svg" alt="menu" width="32" height="32" class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
                 </div>
                 <div class="header-center">
                     <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -47,12 +45,27 @@
         </header>
     </section>
 
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header sidebar-header">
+            <div class="d-flex align-items-center">
+                <img src="../Assets/Images/Logos/Logo-1.png" alt="User Picture">
+                <span class="ms-2">Edu Aide</span>
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-decoration-none">Courses</a></li>
+                <li><a href="#" class="text-decoration-none">Exams</a></li>
+                <li><a href="#" class="text-decoration-none">Notices</a></li>
+                <li><a href="#" class="text-decoration-none">Our Success</a></li>
+            </ul>
+        </div>
+    </div>
 
-    <section id="sidebar">
-        
-    </section>
-
-
+    <!-- Rest of your sections go here -->
 
     <section id="carousel">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -92,6 +105,9 @@
 
     <section id="teacher">
         <div class="position-relative teacher d-flex overflow-x-hidden py-lg-4 pt-4 border-top border-bottom">
+            <div class="text-1">
+              <h1></h1>
+            </div>
             <div class="animate-marquee d-flex gap-3">
               <a href="./mentor-single.html" class="bg-white text-center shadow-sm text-wrap rounded-4 w-100 border card-lift border" style="width: 200px !important">
                 <!--img-->
