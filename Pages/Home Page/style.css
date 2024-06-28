@@ -101,3 +101,8 @@ a, button {
     display: flex;
     justify-content: space-around;
 }
+
+.logo-s{
+    border: 5px solid rgb(12, 142, 248);
+    border-radius: 50%;
+}
