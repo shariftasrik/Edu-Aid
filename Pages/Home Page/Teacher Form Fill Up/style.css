@@ -1,3 +1,5 @@
+
+
 .logo{
     height: 70px;
     border-radius: 50%;
@@ -59,7 +61,7 @@
     z-index: 1;
     position: relative;
 }
-
+  
 
 a, button {
     outline: 0 !important;
@@ -162,10 +164,34 @@ a, button {
   .teacher a:last-child {
     margin-right: 0;
   }
-a{
-    text-decoration: none;
-    color: black;
-}
- .btn{
-    text-decoration: none;
- }
+
+.teacher a {
+    margin-right: 20px;
+    
+  }
+
+  /* .teacher-form-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .teacher{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .teacher-bg{
+    height: 470px;
+    width: 400px;
+    background-color: #e6ecf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  
