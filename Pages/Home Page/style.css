@@ -165,12 +165,10 @@ a{
 }
  .btn{
     text-decoration: none;
+    
  }
 
  .carousel-item img {
-    /* Set desired width */
-    width: 600px; /* Adjust as needed */
-  
-    /* Set desired height (optional) */
-    height: 500px; /* Adjust as needed */
+    width: 600px;
+    height: 500px; 
   }

@@ -151,3 +151,16 @@ a, button {
 .offcanvas {
     width: 320px;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ .btn{
+    text-decoration: none;
+ }
+
+ .carousel-item img {
+    width: 600px;
+    height: 500px; 
+  }
