@@ -134,41 +134,34 @@
   margin: 20px 0;
 }
 
+
+/*Our Batches Section*/
 .our-batches {
   margin-top: 40px;
-  text-align: center;
+  background-color: #f3f3f3; /* Darker background for the outer div */
+  padding: 40px 20px; /* Adjusted padding */
+  border-radius: 10px;
+  max-width: 90%;
+  margin: 40px auto
 }
 
-.our-batches h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.ourB{
-  box-shadow: 0 0 0 rgba(220, 47, 47, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
 .batch-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: rgb(255, 255, 255);
 }
 
 .batch {
-  width: 30%;
-  background-color: #f6f6f6;
+  width: calc(30% - 50px); /* Adjusted width to account for margins */
+  background-color: #f6f6f6; /* Lighter background for inside div */
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  margin-top: 35px;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
+  background-color: #ececec; /* Darker background for the batch div */
+  color: #101010; /* Text color for the batch */
 }
 
 .batch:hover {
@@ -176,36 +169,32 @@
 }
 
 .batch .icon img {
-  /* width: 50px; */
   height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .batch .text {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 10px;
-  color: #333;
+  margin-bottom: 10px;
 }
 
 .batch .description {
   font-size: 16px;
-  color: #666;
+  color: #191919; /* Text color for the description */
   line-height: 1.6;
-  text-align: center;
-  margin-top: 10px;
 }
 
-
 /*Start with us*/
-/* Existing styles remain unchanged */
-
 .start-with-us {
   margin-top: 40px;
   text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 40px auto;
 }
 
 .start-with-us .start-item {
@@ -213,13 +202,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  margin-bottom: 30px;
 }
 
 .start-with-us .start-item h2 {
@@ -227,9 +215,8 @@
   color: #333;
 }
 
-
-.logo-container{
-  width: 150px; 
+.start-with-us .logo-container {
+  width: 150px;
   height: 150px;
   display: flex;
   align-items: center;
@@ -239,51 +226,43 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-.start-with-us .start-item {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 20px;
-  background-color: #fffefe;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 30px;
-}
-.start-with-us .start-item .logo-img {
+
+.start-with-us .logo-container img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.start-with-us .start-item .description {
-  text-align: center;
+.logo-img{
+  border-radius: 50%;
 }
-
-.start-with-us .start-item .description p {
+.start-with-us .description {
+  text-align: center;
   font-size: 16px;
   color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
+  max-width: 600px; /* Shorten the text div */
 }
 
-.start-with-us .start-item .button-container {
+.start-with-us .buttons {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
-.start-with-us .start-item .btn {
-  margin: 0 10px;
+.start-with-us .btn {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.start-with-us .start-item .btn:hover {
-  background-color: #343a40; 
-  color: #fff; 
+.start-with-us .btn:hover {
+  background-color: #343a40;
+  color: #fff;
 }
 
+/* Other styles */
 .App {
   position: relative;
   min-height: 100vh;
@@ -292,6 +271,7 @@
 .content {
   padding-bottom: 80px;
 }
+
 
 
 
