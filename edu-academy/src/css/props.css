@@ -1,0 +1,9 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex{position: fixed;}
+.fixed{position: fixed;}
+
+.bl{display: block;}
