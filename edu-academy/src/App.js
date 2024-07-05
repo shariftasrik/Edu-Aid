@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './css/props.css';
 import './css/App.css';
+import Header from './Screen/header';
+import Sidebar from './Screen/sidebar';
+import CarouselComponent from './Screen/Carousel';
+import Footer from '../src/Screen/Footer'; 
 
 //Logo
 import Logo1 from './Assets/Images/Logos/Logo-1.png';
@@ -12,10 +16,7 @@ import icon2 from './Assets/svg/Programs/tv.svg';
 import icon3 from './Assets/svg/Programs/clipboard-minus.svg';
 
 
-// Components
-import Header from './Screen/header';
-import Sidebar from './Screen/sidebar';
-import CarouselComponent from './Screen/Carousel';
+
 
 function App() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -90,6 +91,10 @@ function App() {
         </div>
         
       </div>
+      
+      {/* Footer Section */}
+      <Footer />
+      
     </div>
   );
 }

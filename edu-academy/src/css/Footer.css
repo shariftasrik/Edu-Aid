@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-side span {
+    margin-right: 10px;
+  }
+  
+  .center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo {
+    height: 45px; 
+    border-radius: 50%;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-side .icon {
+    width: 20px; 
+    height: 40px; 
+    margin-left: 10px;
+  }
+  

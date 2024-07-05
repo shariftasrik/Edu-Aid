@@ -227,17 +227,7 @@
   color: #333;
 }
 
-/* .start-with-us .start-item .logo-container {
-  width: 150px; 
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-} */
+
 .logo-container{
   width: 150px; 
   height: 150px;
@@ -250,8 +240,8 @@
   margin-bottom: 20px;
 }
 .start-with-us .start-item {
-  max-width: 1200px; /* Adjust the maximum width */
-  margin: 0 auto; /* Center align horizontally */
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding: 20px;
   background-color: #fffefe;
   border: 1px solid #ddd;
@@ -290,6 +280,18 @@
 }
 
 .start-with-us .start-item .btn:hover {
-  background-color: #343a40; /* Darken on hover */
-  color: #fff; /* Text color on hover */
+  background-color: #343a40; 
+  color: #fff; 
 }
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 80px;
+}
+
+
+
