@@ -198,3 +198,77 @@
   text-align: center;
   margin-top: 10px;
 }
+
+
+/*Start with us*/
+/* Existing styles remain unchanged */
+
+.start-with-us {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.start-with-us .start-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.start-with-us .start-item h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.start-with-us .start-item .logo-container {
+  width: 150px; /* Adjust size of logo container */
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.start-with-us .start-item .logo-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.start-with-us .start-item .description {
+  text-align: center;
+}
+
+.start-with-us .start-item .description p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.start-with-us .start-item .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.start-with-us .start-item .btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.start-with-us .start-item .btn:hover {
+  background-color: #343a40; /* Darken on hover */
+  color: #fff; /* Text color on hover */
+}
