@@ -39,44 +39,44 @@ function App() {
               <>
                 <CarouselComponent />
                 <div className="our-batches">
-  <h2 className="ourB">Our Batches</h2>
-  <div className="batch-container">
-    <div className="batch">
-      <div className="icon">
-        <img src={icon1} alt="Offline" />
-      </div>
-      <div className="text">Offline</div>
-      <div className="description">
-        Experience dynamic, engaging lectures that bring learning to life. 
-        Get personalized attention and immediate feedback from expert instructors. 
-        Unlock your potential with our immersive offline sessions!
-      </div>
-    </div>
-    <div className="batch">
-      <div className="icon">
-        <img src={icon2} alt="Online" />
-      </div>
-      <div className="text">Online</div>
-      <div className="description">
-        Learn from anywhere with our interactive online courses. 
-        Engage with top instructors through live sessions and real-time discussions. 
-        Transform your learning journey with our innovative online batches!
-      </div>
-    </div>
-    <div className="batch">
-      <div className="icon">
-        <img src={icon3} alt="Exam" />
-      </div>
-      <div className="text">Exam</div>
-      <div className="description">
-        Excel in exams with our targeted preparation sessions. 
-        Practice with realistic mock exams that build confidence. 
-        Benefit from detailed reviews to identify strengths and improve weaknesses. 
-        Master your exams with expert guidance and support!
-      </div>
-    </div>
-  </div>
-</div>
+                  <h2 className="ourB">Our Batches</h2>
+                  <div className="batch-container">
+                    <div className="batch">
+                      <div className="icon">
+                        <img src={icon1} alt="Offline" />
+                      </div>
+                    <div className="text">Offline</div>
+                        <div className="description">
+                          Experience dynamic, engaging lectures that bring learning to life. 
+                          Get personalized attention and immediate feedback from expert instructors. 
+                          Unlock your potential with our immersive offline sessions!
+                        </div>
+                    </div>
+                    <div className="batch">
+                      <div className="icon">
+                        <img src={icon2} alt="Online" />
+                      </div>
+                      <div className="text">Online</div>
+                        <div className="description">
+                          Learn from anywhere with our interactive online courses. 
+                          Engage with top instructors through live sessions and real-time discussions. 
+                          Transform your learning journey with our innovative online batches!
+                        </div>
+                      </div>
+                    <div className="batch">
+                      <div className="icon">
+                        <img src={icon3} alt="Exam" />
+                      </div>
+                      <div className="text">Exam</div>
+                      <div className="description">
+                        Excel in exams with our targeted preparation sessions. 
+                        Practice with realistic mock exams that build confidence. 
+                        Benefit from detailed reviews to identify strengths and improve weaknesses. 
+                        Master your exams with expert guidance and support!
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="start-with-us">
                   <h2 className="section-title">Start With Us</h2>
