@@ -12,12 +12,12 @@
 }
 
 .section {
-  margin-bottom: 20px; /* Decreased the bottom margin to bring the heading closer to the cards */
+  margin-bottom: 100px; /* Decreased the bottom margin to bring the heading closer to the cards */
 }
 
 .section h2 {
   font-size: 24px;
-  margin-bottom: 150px; /* Reduced margin-bottom to bring the heading closer to the cards */
+  margin-bottom: 50px; /* Reduced margin-bottom to bring the heading closer to the cards */
   color: #333;
   text-align: center;
 }
