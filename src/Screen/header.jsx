@@ -16,10 +16,10 @@ function Header({ toggleSidebar }) {
     <div className="header fixed">
       <div className="header-left">
         <img src={menuIcon} className="menu-icon" alt="Menu" onClick={toggleSidebar} />
-        <img src={logo} className="logo" alt="Logo" />
+        <a href='/'><img src={logo} className="logo" alt="Logo" /></a>
       </div>
       <div className="header-right">
-        <img src={cartIcon} className="icon small-icon" alt="Cart" />
+        <a href='/cart'><img src={cartIcon} className="icon small-icon" alt="Cart" /></a>
         <div className="profile">
           <img src={profileIcon} className="icon small-icon" alt="Profile" onClick={toggleProfileDropdown} />
           {profileDropdownVisible && (
