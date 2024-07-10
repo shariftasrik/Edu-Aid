@@ -21,6 +21,9 @@ import Exam from './Pages/Exam';
 import NoticeBoard from './Pages/NoticeBoard';
 import OurSuccess from './Pages/OurSuccess';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 function App() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
