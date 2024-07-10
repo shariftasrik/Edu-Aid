@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Header from '../Screen/header';
+import Sidebar from '../Screen/sidebar.jsx';
 import Footer from '../Screen/Footer';
 import '../css/OurSuccess.css'; 
 
@@ -44,6 +45,7 @@ const OurSuccess = () => {
   return (
     <div className="page">
       <Header />
+      <Sidebar />
       <div className="content">
         <h2>Our Success</h2>
         <div className="form-section">

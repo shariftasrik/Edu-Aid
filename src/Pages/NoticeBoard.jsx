@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Header from '../Screen/header';
+import Sidebar from '../Screen/sidebar.jsx';
 import Footer from '../Screen/Footer';
 import '../css/NoticePage.css'; // Import your page-specific CSS file
 
@@ -9,6 +10,7 @@ const NoticeBoard = () => {
   return (
     <div className="page">
       <Header />
+      <Sidebar />
       <div className="content">
         <section className="section">
           <h2>Schedule Update</h2>

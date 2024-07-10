@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from '../Screen/header';
-import Footer from '../Screen/Footer';
-import Sidebar from '../Screen/sidebar';
+import Header from '../Screen/header.jsx';
+import Sidebar from '../Screen/sidebar.jsx';
+import Footer from '../Screen/Footer.jsx';
 import '../css/CoursePage.css';
+
 
 const Course = () => {
   const courses = [
@@ -13,15 +14,17 @@ const Course = () => {
     // Add more courses as needed
   ];
 
+
+
   return (
     <div className="page">
-      <Header />
-      <Sidebar />
+      <Header/>
+      <Sidebar/>
       <div className="content container">
         {/* Engineering Courses */}
         <section className="section">
           <h2>Engineering</h2>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.map((course, index) => (
               <div className="col" key={index}>
                 <div className="card h-100">
@@ -44,7 +47,7 @@ const Course = () => {
         {/* Varsity Courses */}
         <section className="section">
           <h2>Varsity</h2>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.map((course, index) => (
               <div className="col" key={index}>
                 <div className="card h-100">
@@ -66,7 +69,7 @@ const Course = () => {
         {/* Medical Courses */}
         <section className="section">
           <h2>Medical</h2>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.map((course, index) => (
               <div className="col" key={index}>
                 <div className="card h-100">
@@ -88,7 +91,7 @@ const Course = () => {
         {/* HSC Courses */}
         <section className="section">
           <h2>HSC</h2>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.map((course, index) => (
               <div className="col" key={index}>
                 <div className="card h-100">
@@ -110,7 +113,7 @@ const Course = () => {
         {/* SSC Courses */}
         <section className="section">
           <h2>SSC</h2>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.map((course, index) => (
               <div className="col" key={index}>
                 <div className="card h-100">
