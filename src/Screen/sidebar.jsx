@@ -1,5 +1,3 @@
-// Sidebar.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/Images/Logos/Logo-1.png';

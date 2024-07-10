@@ -33,6 +33,7 @@
     cursor: pointer;
     margin-right: 20px;
     /* border-radius: 50%; */
+    border: 2px solid rgb(193, 188, 188);
   }
 
 .icon{
@@ -41,6 +42,27 @@
     margin-right: 20px;
   }
 
+
+  .nav-s {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 20px;
+  }
+
+  .nav-s .btn {
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .nav-s .btn:hover {
+    background-color: #222425;
+    color: #fff;
+  }
+  
 
   .profile {
     position: relative;

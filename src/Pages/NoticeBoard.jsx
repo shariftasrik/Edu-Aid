@@ -1,5 +1,4 @@
 // NoticeBoard.js
-
 import React from 'react';
 import Header from '../Screen/header';
 import Sidebar from '../Screen/sidebar.jsx';
