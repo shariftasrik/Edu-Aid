@@ -17,7 +17,7 @@ const Footer = () => {
         <span>&copy; 2024 Edu-Aid</span>
       </div>
       <div className="center">
-        <img src={Logo1} alt="Coaching Logo" className="logo" />
+        <a href="/"><img src={Logo1} alt="Coaching Logo" className="logo" /></a>
       </div>
       <div className="right-side">
         {/* Replace with your actual SVG icons */}

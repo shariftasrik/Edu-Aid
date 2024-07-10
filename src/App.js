@@ -91,8 +91,8 @@ function App() {
                       Join us today and embark on a journey of knowledge and success. Our programs are designed to cater to your unique learning needs and help you achieve your goals.
                     </div>
                     <div className="buttons">
-                      <button className="btn btn-outline-dark">Course</button>
-                      <button className="btn btn-outline-dark">Exam</button>
+                      <a href='/Course'><button className="btn btn-outline-dark">Course</button></a> 
+                      <a href='/Exam'><button className="btn btn-outline-dark">Exam</button></a> 
                     </div>
                   </div>
                 </div>
