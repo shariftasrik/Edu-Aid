@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../Assets/Images/Logos/Logo-1.png';
 import menuIcon from '../Assets/svg/list.svg';
 import cartIcon from '../Assets/svg/bag-plus.svg';
 import profileIcon from '../Assets/svg/person-circle.svg';
 import '../css/header.css';
 
-function Header({setShowLogin},{ toggleSidebar }) {
+function Header({ setShowLogin, toggleSidebar }) {
   const [profileDropdownVisible, setProfileDropdownVisible] = useState(false);
 
   const toggleProfileDropdown = () => {
@@ -16,24 +17,24 @@ function Header({setShowLogin},{ toggleSidebar }) {
     <div className="header fixed">
       <div className="header-left">
         {/* <img src={menuIcon} className="menu-icon" alt="Menu" onClick={toggleSidebar} /> */}
-        <a href='/'><img src={logo} className="logo" alt="Logo" /></a>
+        <Link to="/"><img src={logo} className="logo" alt="Logo" /></Link>
       </div>
       <div className="header-right">
         <div className="nav-s">
-          <a href="/"><button className="btn btn-outline-dark">Home</button></a>
-          <a href="/Course"><button className="btn btn-outline-dark">Course</button></a>
-          <a href="/Exam"><button className="btn btn-outline-dark">Exam</button></a>
-          <a href="/NoticeBoard.jsx"><button className="btn btn-outline-dark">Notice Board</button></a>
-          <a href="/OurSuccess.jsx"><button className="btn btn-outline-dark">Our Success</button></a>
+          <Link to="/"><button className="btn btn-outline-dark">Home</button></Link>
+          <Link to="/course"><button className="btn btn-outline-dark">Course</button></Link>
+          <Link to="/exam"><button className="btn btn-outline-dark">Exam</button></Link>
+          <Link to="/notice-board"><button className="btn btn-outline-dark">Notice Board</button></Link>
+          <Link to="/our-success"><button className="btn btn-outline-dark">Our Success</button></Link>
         </div>
-        <a href='/cart'><img src={cartIcon} className="icon small-icon" alt="Cart" /></a>
+        <Link to="/cart"><img src={cartIcon} className="icon small-icon" alt="Cart" /></Link>
         <div className="profile">
           <img src={profileIcon} className="icon small-icon" alt="Profile" onClick={toggleProfileDropdown} />
           {profileDropdownVisible && (
             <div className="profile-dropdown">
-              <a href="#">My Profile</a>
-              <a href="#">Edit Profile</a>
-              <button onClick={()=>setShowLogin(true)}>Sign In/Sign Out</button>
+              <Link to="#">My Profile</Link>
+              <Link to="#">Edit Profile</Link>
+              <button onClick={() => setShowLogin(true)}>Sign In/Sign Out</button>
             </div>
           )}
         </div>

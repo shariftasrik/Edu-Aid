@@ -1,9 +1,8 @@
-// NoticeBoard.js
 import React from 'react';
 import Header from '../Screen/header';
 import Sidebar from '../Screen/sidebar.jsx';
 import Footer from '../Screen/Footer';
-import '../css/NoticePage.css'; // Import your page-specific CSS file
+import '../css/NoticePage.css'; 
 
 const NoticeBoard = () => {
   return (
