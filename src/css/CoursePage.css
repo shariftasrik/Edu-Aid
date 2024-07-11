@@ -1,38 +1,7 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.content {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.section {
-  margin-bottom: 50px; 
-}
-
-.section h2 {
-  font-size: 26px;
-  margin-bottom: 50px; 
-  color: #1b1a1a;
-  text-align: center;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Reduced the gap between cards */
-  justify-content: center; /* Center the cards */
-}
-
 .card {
-  width: calc(50% - 20px); /* Increased the width to make the cards wider */
-  background-color: #f6f6f6;
-  border: 1px solid #ddd;
+  width: calc(100% - 20px); /* Adjusted width for responsiveness */
+  background-color: #ffffff; /* Changed background color */
+  border: 1px solid #e0e0e0; /* Lightened border color */
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,25 +15,33 @@
   transform: translateY(-5px);
 }
 
-.card img.course-image {
+.card img.card-img-top {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the entire space */
 }
 
-.card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 10px 0;
   color: #333;
   text-align: center;
 }
 
-.card p {
-  font-size: 14px;
+.card-description {
+  font-size: 16px;
   color: #666;
   line-height: 1.5;
-  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -73,17 +50,18 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  padding-top: 10px;
 }
 
 .price {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
 }
 
 .add-to-cart {
-  padding: 8px 12px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   background-color: #007bff;
@@ -95,21 +73,20 @@
   background-color: #0056b3;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .card {
-    width: 100%;
+    width: calc(33.33% - 20px); /* Adjusted for medium screens */
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
   .card {
-    width: 60%;
+    width: calc(50% - 20px); /* Adjusted for tablets */
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .card {
-    width: 25%;
+    width: calc(100% - 20px); /* Full width for smaller screens */
   }
 }
