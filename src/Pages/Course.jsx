@@ -98,7 +98,7 @@ const Course = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.engineering.map((course, index) => (
               <div className="col" key={index}>
-                <div className="card h-100">
+                <div className="card-1 h-100">
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
@@ -120,7 +120,7 @@ const Course = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.varsity.map((course, index) => (
               <div className="col" key={index}>
-                <div className="card h-100">
+                <div className="card-1 h-100">
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
@@ -142,7 +142,7 @@ const Course = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.medical.map((course, index) => (
               <div className="col" key={index}>
-                <div className="card h-100">
+                <div className="card-1 h-100">
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
@@ -164,7 +164,7 @@ const Course = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.hsc.map((course, index) => (
               <div className="col" key={index}>
-                <div className="card h-100">
+                <div className="card-1 h-100">
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
@@ -186,7 +186,7 @@ const Course = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.ssc.map((course, index) => (
               <div className="col" key={index}>
-                <div className="card h-100">
+                <div className="card-1 h-100">
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>

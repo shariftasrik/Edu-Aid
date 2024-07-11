@@ -10,9 +10,9 @@
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 50px;
-  color: #1d1d1d;
+  color: #242424;
   text-align: center;
 }
 
@@ -76,7 +76,7 @@ h2 {
 
 .add-student-box,
 .filter-section {
-  width: calc(50% - 20px); /* Set width for each box */
+  width: calc(42% - 20px); /* Set width for each box */
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;

@@ -148,8 +148,8 @@ const OurSuccess = () => {
             />
           </div>
           <div className="form-buttons">
-            <button className="btn btn-success" onClick={addStudent}>Add</button>
-            <button className="btn btn-danger" onClick={() => setFormData({ name: '', regNo: '', mobileNo: '', university: '' })}>Cancel</button>
+            <button className="btn btn-primary" onClick={addStudent}>Add</button>
+            <button className="btn btn-secondary" onClick={() => setFormData({ name: '', regNo: '', mobileNo: '', university: '' })}>Cancel</button>
           </div>
         </div>
 
