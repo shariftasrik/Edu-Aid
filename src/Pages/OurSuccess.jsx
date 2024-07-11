@@ -1,4 +1,3 @@
-// OurSuccess.jsx
 import React, { useState } from 'react';
 import Header from '../Screen/header';
 import Sidebar from '../Screen/sidebar';
@@ -35,17 +34,83 @@ const OurSuccess = () => {
     setFormData({ name: '', regNo: '', mobileNo: '', university: '' });
   };
 
-  const filteredStudents = students.filter((student) =>
-    Object.keys(search).every((key) =>
-      student[key].toLowerCase().includes(search[key].toLowerCase())
-    )
-  );
+  const filterStudents = () => {
+    return students.filter((student) =>
+      Object.keys(search).every((key) =>
+        student[key].toLowerCase().includes(search[key].toLowerCase())
+      )
+    );
+  };
+
+  const clearFilters = () => {
+    setSearch({ name: '', regNo: '', mobileNo: '', university: '' });
+  };
+
+  const deleteStudent = (index) => {
+    const updatedStudents = [...students];
+    updatedStudents.splice(index, 1);
+    setStudents(updatedStudents);
+  };
+
+  const editStudent = (index, updatedStudent) => {
+    const updatedStudents = [...students];
+    updatedStudents[index] = updatedStudent;
+    setStudents(updatedStudents);
+  };
 
   return (
     <div className="page">
+      <Header />
+      <Sidebar />
       <div className="content">
         <h2>Our Success</h2>
-        <div className="form-section">
+
+        <div className="filter-section">
+          <h3>Filter Students</h3>
+          <div className="form-group">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              value={search.name}
+              onChange={handleSearchChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Reg No</label>
+            <input
+              type="text"
+              name="regNo"
+              value={search.regNo}
+              onChange={handleSearchChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Mobile No</label>
+            <input
+              type="text"
+              name="mobileNo"
+              value={search.mobileNo}
+              onChange={handleSearchChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>University</label>
+            <input
+              type="text"
+              name="university"
+              value={search.university}
+              onChange={handleSearchChange}
+            />
+          </div>
+          <div className="form-buttons">
+            <button className="btn btn-primary" onClick={filterStudents}>Filter</button>
+            <button className="btn btn-secondary" onClick={clearFilters}>Clear</button>
+          </div>
+        </div>
+
+        <div className="add-student-box">
+          <h3>Add Student</h3>
           <div className="form-group">
             <label>Name</label>
             <input
@@ -83,54 +148,14 @@ const OurSuccess = () => {
             />
           </div>
           <div className="form-buttons">
-            <button onClick={addStudent}>Add</button>
-            <button onClick={() => setFormData({ name: '', regNo: '', mobileNo: '', university: '' })}>Cancel</button>
-          </div>
-        </div>
-
-        <div className="form-section">
-          <h3>Search Students</h3>
-          <div className="form-group">
-            <label>Name</label>
-            <input
-              type="text"
-              name="name"
-              value={search.name}
-              onChange={handleSearchChange}
-            />
-          </div>
-          <div className="form-group">
-            <label>Reg No</label>
-            <input
-              type="text"
-              name="regNo"
-              value={search.regNo}
-              onChange={handleSearchChange}
-            />
-          </div>
-          <div className="form-group">
-            <label>Mobile No</label>
-            <input
-              type="text"
-              name="mobileNo"
-              value={search.mobileNo}
-              onChange={handleSearchChange}
-            />
-          </div>
-          <div className="form-group">
-            <label>University</label>
-            <input
-              type="text"
-              name="university"
-              value={search.university}
-              onChange={handleSearchChange}
-            />
+            <button className="btn btn-success" onClick={addStudent}>Add</button>
+            <button className="btn btn-danger" onClick={() => setFormData({ name: '', regNo: '', mobileNo: '', university: '' })}>Cancel</button>
           </div>
         </div>
 
         <div className="table-section">
           <h3>Student List</h3>
-          <table>
+          <table className="table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -141,15 +166,15 @@ const OurSuccess = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredStudents.map((student, index) => (
+              {filterStudents().map((student, index) => (
                 <tr key={index}>
                   <td>{student.name}</td>
                   <td>{student.regNo}</td>
                   <td>{student.mobileNo}</td>
                   <td>{student.university}</td>
                   <td>
-                    <button>Edit</button>
-                    <button>Delete</button>
+                    <button className="btn btn-primary" onClick={() => editStudent(index, student)}>Edit</button>
+                    <button className="btn btn-danger" onClick={() => deleteStudent(index)}>Delete</button>
                   </td>
                 </tr>
               ))}

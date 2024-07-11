@@ -14,13 +14,13 @@ const NoticeBoard = () => {
           <h2>Schedule Update</h2>
           <div className="card-container">
             <div className="card">
-              <h3>Update Title 1</h3>
-              <p>Update description goes here.</p>
+              <h3>Physics Exam Time</h3>
+              <p>Physics exam of Alpha batch will be at 4.30pm on 15th July</p>
               <a href="#">View More</a>
             </div>
             <div className="card">
-              <h3>Update Title 2</h3>
-              <p>Update description goes here.</p>
+              <h3>Chemistry Exam Time</h3>
+              <p>Chemistry exam of Alpha batch will be at 4.30pm on 16th July</p>
               <a href="#">View More</a>
             </div>
             {/* Add more cards as needed */}
@@ -30,13 +30,13 @@ const NoticeBoard = () => {
           <h2>Other Notices</h2>
           <div className="card-container">
             <div className="card">
-              <h3>Notice Title 1</h3>
-              <p>Notice description goes here.</p>
+              <h3>Beta batch - Engineering</h3>
+              <p>Dedicated Engineering Admission preperation batch exam will be at 10.00am on 25th July</p>
               <a href="#">View More</a>
             </div>
             <div className="card">
-              <h3>Notice Title 2</h3>
-              <p>Notice description goes here.</p>
+              <h3>Cornea Batch - Medical</h3>
+              <p>Dedicated Medical Admission preperation batch exam will be at 10.00am on 25th July</p>
               <a href="#">View More</a>
             </div>
             {/* Add more cards as needed */}
