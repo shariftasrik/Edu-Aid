@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../Assets/Images/Logos/Logo-1.png';
 // import menuIcon from '../Assets/svg/list.svg';
 import cartIcon from '../Assets/svg/bag-plus.svg';
 import profileIcon from '../Assets/svg/person-circle.svg';
 import '../css/header.css';
+import { CartContext } from '../CartContext';
 
 function Header({ setShowLogin, toggleSidebar }) {
   const [profileDropdownVisible, setProfileDropdownVisible] = useState(false);
@@ -12,6 +13,16 @@ function Header({ setShowLogin, toggleSidebar }) {
   const toggleProfileDropdown = () => {
     setProfileDropdownVisible(!profileDropdownVisible);
   };
+
+  const {getTotalCartAmount,token,setToken} = useContext(CartContext);
+
+  const navigate = useNavigate();
+  const Signout = ()=> {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/");
+  }
+
 
   return (
     <div className="header fixed">
@@ -34,7 +45,11 @@ function Header({ setShowLogin, toggleSidebar }) {
             <div className="profile-dropdown">
               <Link to="#">My Profile</Link>
               <Link to="#">Edit Profile</Link>
-              <button onClick={() => setShowLogin(true)} className='btn-prfl'>Sign In</button>
+              {!token?<button onClick={() => setShowLogin(true)} className='btn-prfl'>Sign In</button>
+              :
+              <button onClick={(Signout)} className='btn-prfl'>Signout</button>
+              }
+              
             </div>
           )}
         </div>

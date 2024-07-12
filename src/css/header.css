@@ -95,3 +95,11 @@
   .btn-prfl{
     border-radius: 7.5px;
   }
+
+  .header-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 90px;
+  }
