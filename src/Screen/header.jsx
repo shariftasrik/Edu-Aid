@@ -34,7 +34,7 @@ function Header({ setShowLogin, toggleSidebar }) {
             <div className="profile-dropdown">
               <Link to="#">My Profile</Link>
               <Link to="#">Edit Profile</Link>
-              <button onClick={() => setShowLogin(true)}>Sign In/Sign Out</button>
+              <button onClick={() => setShowLogin(true)} className='btn-prfl'>Sign In</button>
             </div>
           )}
         </div>

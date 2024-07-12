@@ -34,7 +34,7 @@ function App() {
 
   return (
     <Router>
-      {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
+      {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
       <div className="App">
         <Header setShowLogin={setShowLogin} toggleSidebar={toggleSidebar} />
         <Sidebar visible={sidebarVisible} toggleSidebar={toggleSidebar} />
