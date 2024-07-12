@@ -6,8 +6,8 @@ const CartContext = createContext(null);
 
 const CartContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const [token, setToken] = useState(null); // Define token state and setToken function
   const url = "http://localhost:4000";
+  const [token, setToken] = useState("");
 
   const addToCart = (itemId) => {
     if (!cartItems[itemId]) {
