@@ -42,7 +42,7 @@ import SSCImg6 from '../Assets/Images/Carousel/S_ICT.png';
 
 
 const Course = () => {
-  // Define courses for each section
+  // const { addToCart } = useCart();
   const courses = {
     engineering: [
       { title: 'Engineering Physics', description: 'Course description goes here.', price: '$100', image: EnggImg1 },

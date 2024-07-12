@@ -14,12 +14,12 @@ const NoticeBoard = () => {
           <h2>Schedule Update</h2>
           <div className="card-container">
             <div className="card">
-              <h3>Physics Exam Time</h3>
+              <h3>Physics - Exam Time</h3>
               <p>Physics exam of Alpha batch will be at 4.30pm on 15th July</p>
               <a href="#">View More</a>
             </div>
             <div className="card">
-              <h3>Chemistry Exam Time</h3>
+              <h3>Chemistry - Exam Time</h3>
               <p>Chemistry exam of Alpha batch will be at 4.30pm on 16th July</p>
               <a href="#">View More</a>
             </div>

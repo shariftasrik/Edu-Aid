@@ -21,12 +21,12 @@ const Exam = () => {
               <a href="#">Start Exam</a>
             </div>
             <div className="card">
-              <h3>Weekly Higher Math 1</h3>
+              <h3>Weekly - Higher Math 1</h3>
               <p>Weekly Higher Math 1st Paper</p>
               <a href="#">Start Exam</a>
             </div>
             <div className="card">
-              <h3>Weekly Chemistry 1</h3>
+              <h3>Weekly - Chemistry 1</h3>
               <p>Weekly Chemistry 1st Paper</p>
               <a href="#">Start Exam</a>
             </div>
@@ -37,12 +37,12 @@ const Exam = () => {
           <h2>Medical Exams</h2>
           <div className="card-container">
             <div className="card">
-              <h3>Weekly Biology 1</h3>
+              <h3>Weekly - Biology 1</h3>
               <p>Weekly Biology 1st Paper</p>
               <a href="#">Start Exam</a>
             </div>
             <div className="card">
-              <h3>Weekly Chemistry 1</h3>
+              <h3>Weekly - Chemistry 1</h3>
               <p>Weekly Chemistry 1st Paper</p>
               <a href="#">Start Exam</a>
             </div>
@@ -54,12 +54,12 @@ const Exam = () => {
           <h2>Varsity Exams</h2>
           <div className="card-container">
             <div className="card">
-              <h3>Weekly Physics 1</h3>
+              <h3>Weekly - Physics 1</h3>
               <p>Weekly Physics 1st Paper</p>
               <a href="#">Start Exam</a>
             </div>
             <div className="card">
-              <h3>Weekly Chemistry 1</h3>
+              <h3>Weekly - Chemistry 1</h3>
               <p>Weekly Chemistry 1st Paper</p>
               <a href="#">Start Exam</a>
             </div>
