@@ -1,0 +1,277 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  background-color: #e9e9e9;
+  position: fixed;
+  z-index: 1000;
+  transform: translateX(-250px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+.sidebar .logo {
+  background: #f9f6f6;
+  padding: 10px;
+}
+
+.sidebar .logo img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.menu-icon {
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:hover{
+  transform: translateY(-2px);
+}
+
+.logo {
+  height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.profile-dropdown a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Content Styles */
+.content {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.carousel-container {
+  margin: 20px 0;
+}
+
+
+/*Our Batches Section*/
+.our-batches {
+  margin-top: 40px;
+  background-color: #f3f3f3; /* Darker background for the outer div */
+  padding: 40px 20px; /* Adjusted padding */
+  border-radius: 10px;
+  max-width: 90%;
+  margin: 40px auto
+}
+
+.batch-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.batch {
+  width: calc(30% - 50px); /* Adjusted width to account for margins */
+  background-color: #f6f6f6; /* Lighter background for inside div */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #ececec; /* Darker background for the batch div */
+  color: #101010; /* Text color for the batch */
+}
+
+.batch:hover {
+  transform: translateY(-5px);
+}
+
+.batch .icon img {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.batch .text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.batch .description {
+  font-size: 16px;
+  color: #191919; /* Text color for the description */
+  line-height: 1.6;
+}
+
+/*Start with us*/
+.start-with-us {
+  margin-top: 40px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.start-with-us .start-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.start-with-us .start-item h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.start-with-us .logo-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.start-with-us .logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo-img{
+  border-radius: 50%;
+}
+.start-with-us .description {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px; /* Shorten the text div */
+}
+
+.start-with-us .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.start-with-us .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.start-with-us .btn:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Other styles */
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 80px;
+}
+
+
+
+
