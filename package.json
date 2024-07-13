@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "vercel-start": "node index.js"
+    "vercel-start": "node server.js"
   },
   "eslintConfig": {
     "extends": [
