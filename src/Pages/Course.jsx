@@ -39,51 +39,42 @@ import SSCImg4 from '../Assets/Images/Carousel/S_Ch.png';
 import SSCImg5 from '../Assets/Images/Books/Biology.jpg';
 import SSCImg6 from '../Assets/Images/Carousel/S_ICT.png';
 
-
-
 const Course = () => {
-  // const { addToCart } = useCart();
   const courses = {
     engineering: [
       { title: 'Engineering Physics', description: 'Course description goes here.', price: '$100', image: EnggImg1 },
       { title: 'Engineering Higher Math', description: 'Course description goes here.', price: '$120', image: EnggImg2 },
       { title: 'Engineering Chemistry', description: 'Course description goes here.', price: '$120', image: EnggImg3 },
-      // Add more engineering courses as needed
     ],
     varsity: [
       { title: 'Varsity Physics', description: 'Course description goes here.', price: '$150', image: VarImg1 },
       { title: 'Varsity Higher Math', description: 'Course description goes here.', price: '$130', image: VarImg2 },
       { title: 'Varsity Chemistry', description: 'Course description goes here.', price: '$130', image: VarImg3 },
       { title: 'Varsity ICT', description: 'Course description goes here.', price: '$130', image: VarImg4 },
-      // Add more varsity courses as needed
     ],
     medical: [
       { title: 'Medical Botany', description: 'Course description goes here.', price: '$200', image: MedImg1 },
       { title: 'Medical Zoology', description: 'Course description goes here.', price: '$180', image: MedImg2 },
       { title: 'Medical Chemistry', description: 'Course description goes here.', price: '$130', image: MedImg3 },
-      // Add more medical courses as needed
     ],
     hsc: [
       { title: 'HSC Higher Math 1st', description: 'Course description goes here.', price: '$80', image: HSCImg1 },
       { title: 'HSC Higher Math 2nd', description: 'Course description goes here.', price: '$90', image: HSCImg2 },
-      { title: 'HSC Physics 1at', description: 'Course description goes here.', price: '$90', image: HSCImg3 },
+      { title: 'HSC Physics 1st', description: 'Course description goes here.', price: '$90', image: HSCImg3 },
       { title: 'HSC Physics 2nd', description: 'Course description goes here.', price: '$130', image: HSCImg4 },
       { title: 'HSC Chemistry 1st', description: 'Course description goes here.', price: '$130', image: HSCImg5 },
       { title: 'HSC Chemistry 2nd', description: 'Course description goes here.', price: '$80', image: HSCImg6 },
       { title: 'HSC Biology 1st', description: 'Course description goes here.', price: '$90', image: HSCImg7 },
       { title: 'HSC Biology 2nd', description: 'Course description goes here.', price: '$90', image: HSCImg8 },
       { title: 'HSC ICT', description: 'Course description goes here.', price: '$130', image: HSCImg9 },
-     
-      // Add more HSC courses as needed
     ],
     ssc: [
       { title: 'SSC Math', description: 'Course description goes here.', price: '$70', image: SSCImg1 },
       { title: 'SSC Higher Math', description: 'Course description goes here.', price: '$60', image: SSCImg2 },
       { title: 'SSC Physics', description: 'Course description goes here.', price: '$130', image: SSCImg3 },
-      { title: 'SSC Chemistry', description: 'Course description goes here.', price: '$130', image: SSCImg4},
-      { title: 'SSC Biology', description: 'Course description goes here.', price: '$130', image: SSCImg5},
-      { title: 'SSC ICT', description: 'Course description goes here.', price: '$130', image: SSCImg6},
-      // Add more SSC courses as needed
+      { title: 'SSC Chemistry', description: 'Course description goes here.', price: '$130', image: SSCImg4 },
+      { title: 'SSC Biology', description: 'Course description goes here.', price: '$130', image: SSCImg5 },
+      { title: 'SSC ICT', description: 'Course description goes here.', price: '$130', image: SSCImg6 },
     ],
   };
 
@@ -164,7 +155,7 @@ const Course = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {courses.hsc.map((course, index) => (
               <div className="col" key={index}>
-                <div className="card-1 h-100">
+                                <div className="card-1 h-100">
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
@@ -201,7 +192,6 @@ const Course = () => {
             ))}
           </div>
         </section>
-
       </div>
       <Footer />
     </div>
@@ -209,3 +199,4 @@ const Course = () => {
 };
 
 export default Course;
+
